@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="safety.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Emergenzy</h1>
+            <p>Safety at your fingertips</p>
+        </header>
+
+        <!-- Emergency Alert Button -->
+        <button id="panic-button" class="button panic">🚨 Panic Button</button>
+
+        <!-- Location Tracking -->
+        <button id="location-tracker" class="button tracker">📍 Track My Location</button>
+        <p id="location-status"></p>
+
+        <!-- Google Map -->
+        <div id="map" class="map-container"></div>
+
+        <!-- Safety Resources -->
+        <button id="safety-resources" class="button resources">📚 Safety Resources</button>
+        <div id="resources-list" class="hidden">
+            <ul>
+                <li><a href="self-defense.html" target="_blank">
+					Self-Defense Tips</a></li>
+                <li><a href="Emergencycontacts.html" target="_blank">Emergency Contacts</a></li>
+                <li><a href="https://www.helplinenumbers.in/" target="_blank">Helpline Numbers</a></li>
+            </ul>
+        </div>
+
+        <!-- Education Material -->
+        <button id="education-material" class="button education">📖 Education Material</button>
+        <div id="education-list" class="hidden">
+            <ul>
+                <li><a href="https://www.india.gov.in/topics/social-development/women-children/women-safety" target="_blank">Women's Safety Laws</a></li>
+                <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/first-aid.html" target="_blank">Basic First Aid</a></li>
+                <li><a href="https://www.techrepublic.com/article/10-safety-apps-everyone-should-know-about/" target="_blank">Safety Apps Guide</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
